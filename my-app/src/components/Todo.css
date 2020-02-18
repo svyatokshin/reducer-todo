@@ -1,0 +1,26 @@
+.todo.completed {
+    color: red;
+    text-decoration: line-through;
+  }
+
+  .clear-btn{
+      margin-left: 10px;
+      color: white;
+      background: red;
+      border-color: grey;
+      border-radius:10px;
+  }
+  .addButton{
+    margin-left: 10px;
+    color: white;
+    background: green;
+    border-color: grey;
+    border-radius:10px;
+}
+
+.body-div{
+      background-color: papayawhip;
+}
+h1{
+      color: darkolivegreen;
+}

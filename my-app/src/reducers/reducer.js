@@ -1,11 +1,11 @@
 
 export const initialState = [{
-        todo: 'Learn about reducers',
+        todo: 'Learn about React',
         completed: false,
         id: 3892987589
     },
     {
-        todo: 'Learn about Seducers',
+        todo: 'Learn about Javascript',
         completed: false,
         id: 214324324
     }

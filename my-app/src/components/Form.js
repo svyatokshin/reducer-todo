@@ -1,6 +1,7 @@
 import React, { useReducer, useState } from 'react';
 import { reducer, initialState } from './../reducers/reducer';
 import { Todo } from './Todo';
+import "./Todo.css";
 
 export const Form = () => {
     const [todoList, dispatch] = useReducer(reducer, initialState)
@@ -16,12 +17,12 @@ export const Form = () => {
     }
 
     return (
-        <div>
+        <div className="body-div">
             <h1> List of Todo's</h1>
                 <form onSubmit={handleSubmit}>
                     <input className='input' type='text' value={todo} name='todo' onChange={handleChanges} />
 
-                    <button>
+                    <button className="addButton">
                         Add Todo
                     </button>
                 </form>
@@ -34,7 +35,7 @@ export const Form = () => {
                         completed = {item.completed}
                     />    
                 ))}
-                <button onClick={() => {dispatch({ type: "CLEAR_COMPLETED"})}}>
+                <button className="clear-btn" onClick={() => {dispatch({ type: "CLEAR_COMPLETED"})}}>
                     Clear Completed
                 </button>
         </div>
